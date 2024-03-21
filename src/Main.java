@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     enum Day {
         MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
@@ -47,6 +51,39 @@ public class Main {
          char target = 'Z'; // example character
         int encodedValue = (target == '#')? 0 : (target == 'X')? 1 : (target == 'Z')?2:3;
         System.out.println(encodedValue);
+
+        // practice for looping
+        int n = 5;
+        //for loop
+        for(int i = 1; i <= n; i++){
+            System.out.println("Java is fun if code work");
+            System.out.println(i);
+        }
+
+        // practice for looping with trim Name
+        String Name = "Yuninda Faranika";
+        String[] arrOfStr = Name.split(" ");
+
+        //for loop
+        for(int i = 0; i < arrOfStr.length; i++){
+            System.out.println("Java is fun if code work");
+            System.out.println(arrOfStr[i]);
+        }
+
+        // practice for looping with trim Name
+        String names = "Yuninda Faranika";
+        String[] namesplitted = names.split(" ");
+
+        //for loop
+        for(String item : namesplitted){
+            System.out.println("Java is fun if code work");
+            System.out.println(item);
+        }
+
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5);
+        for (Integer num : numbers){
+            System.out.println(num);
+        }
 
     }
 }
