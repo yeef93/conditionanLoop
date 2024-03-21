@@ -85,5 +85,39 @@ public class Main {
             System.out.println(num);
         }
 
+        // looping day
+        List<String> Days = Arrays.asList("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        for (String day : Days){
+            System.out.println(day);
+        }
+
+        // while do
+        int i = 0;
+        do {
+            System.out.println(i);
+            i++;
+        }
+        while (i < 5);
+
+        //for genap data only
+        for (int j = 0; j<10; j++){
+            if(j % 2 ==0){
+                continue;
+            }
+            System.out.println(j);
+        }
+
+        System.out.println("Search Character");
+        String[] nama = {"a", "b", "c", "d"};
+        String searchTarget = "b";
+        for(int k=0;k< nama.length; k++){
+            if(nama[k].equals(searchTarget)) {
+                System.out.println(searchTarget + " Found at index" + k);
+                break;
+            }
+            System.out.println(nama[k]+ " is not "+searchTarget );
+        }
+
+
     }
 }
